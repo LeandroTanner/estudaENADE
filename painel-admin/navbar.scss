@@ -1,0 +1,112 @@
+@import "main";
+
+nav {
+    @include doFlex(center, flex-start, column, 0);
+    height: 100%;
+    padding: 15px;
+
+    background-color: var(--blue2); color: var(--white);
+
+    a{text-decoration: none;}
+
+    h1.logo {
+        @include doFlex(flex-start, center, row, 5px);
+        font-weight: 800;
+        font-size: 32px;
+        letter-spacing: -2px;
+        transform: scaleY(.85);
+        color: white;
+        transition: 0.5s;
+    
+        i.icon {
+            transform: scaleX(-1);
+        }
+    
+    }
+
+
+    ul {
+        @include doFlex(center, flex-start, column, 5px);
+        width: 100%;
+        list-style-type: none;
+
+        li {
+            width: 100%;
+            a {
+                @include doFlex(flex-start, center, row, 5px);
+                width: 100%;
+                padding: 5px;
+                font-weight: 600;
+
+                text-transform: uppercase;
+                border-radius: 8px;
+                background-color: var(--blue3); color: var(--white);
+                
+                
+                i.icon {
+                    @include doFlex(center, center, row, 0);
+                    min-width: 30px; max-width: 30px;
+                    min-height: 30px; max-height: 30px;
+
+                    border-radius: 7px;
+                    background-color: var(--white); color: var(--blue2);
+                }
+            }
+
+            &.user-container {
+                a {
+                    background-color: var(--blue1);
+
+                    img.ppic, i.ppic {
+                        @include doFlex(center, center, column, 0);
+                        min-width: 50px; max-width: 50px;
+                        min-height: 50px; max-height: 50px;
+                        font-size: 24px;
+                        background-color: var(--blue2);
+
+                        object-fit: cover;
+
+                        border-radius: 100%;
+                    }
+
+
+                    div.info {
+                        @include doFlex(center, flex-start, column, 5px);
+
+                        div.about {
+                            @include doFlex(center, flex-start, column, 5px); flex-wrap: wrap;
+
+                            p.nome {
+                                text-transform: capitalize;
+                                transform: scaleY(.85);
+                            }
+
+                            p.pontuacao {
+                                padding: 1px 5px;
+                                font-size: small;
+                                font-weight: 900;
+
+                                border-radius: 5px;
+                                background-color: var(--gold3); color: var(--dark-gray3);
+                            }
+                        }
+
+                        p.tipo {
+                            font-size: small;
+                            font-weight: 300;
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 980px) {
+    nav {
+        width: 100%; height: unset;
+    }
+}

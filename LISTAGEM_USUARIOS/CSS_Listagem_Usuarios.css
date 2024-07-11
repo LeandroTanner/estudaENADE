@@ -1,0 +1,63 @@
+
+.card.mx-auto.my-3{
+    width: 80%;
+    background-color: #D9DCD6;
+    display: flex;
+    font-weight: 700;
+} /*TITULO*/
+
+.card.mx-auto{
+    background-color: #D9DCD6;
+    width: 80%;
+}
+
+.card-title{
+    font-weight: 700; /* Montserrat Bold */ 
+    color: black;
+    text-align: center;
+}
+
+.resultados.mx-auto{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.subtitulo{
+    background-color: #81C3D7;
+    border-radius: 5px;
+    color: #000;
+    font-weight: 650;
+}
+
+.icone{
+    color: #2F6690;
+    font-size: 130%;
+}
+
+.info{
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-primary.btn-sm{
+    margin-bottom: 2%;
+    font-size: 100%;
+    font-weight: 700;
+    text-align: center;
+    background-color: #3A7CA5;
+    border: #000;
+    transition: 0.5s;
+}
+
+.btn-primary.btn-sm:hover{
+    background-color: #3A7CA5;
+    scale: 1.01;
+}
+
+.botoes{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 80%;
+}
+
+/*AQUI TERMINA O CONTEÚDO PRINCIPAL*/

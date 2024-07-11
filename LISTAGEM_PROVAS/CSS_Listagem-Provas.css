@@ -1,0 +1,48 @@
+
+.card.conteudo.mx-auto {
+    width: 80%;
+    background-color: #D9DCD6;
+    display: flex;
+}
+
+.card-title {
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+.card.conteudo.mx-auto{
+    background-color: #D9DCD6;
+    width: 80%;
+    margin: 2%;
+}
+
+.card-title{
+    font-weight: 700;
+}
+
+.card-text{
+    font-weight: 550;
+    text-align: justify;
+}
+
+.detalhes_Prova{
+    font-weight: 650;
+    text-align: center;
+    background-color: #81C3D7;
+    border-radius: 5px;
+}
+
+.btn.mb-2{
+    background-color: #3A7CA5;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.btn.mb-2:hover{
+    scale: 1.05;
+}
+
+/*AQUI ACABA O CONTEUDO*/

@@ -1,0 +1,31 @@
+@import "../main";
+
+
+body {
+    @include doFlex(center, center !important, column, 15px);
+
+    div.update-feedback-container {
+        @include doFlex(center, center, column, 15px);
+        padding: 30px;
+        background-color: var(--white);
+
+        button.voltar {
+            @include doFlex(center, center, row, 5px);
+            padding: 10px 30px;
+            font-size: small;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 15px; border: 2px solid var(--dark-gray3);
+            background-color: transparent;
+
+            cursor: pointer;
+            transition: .2s;
+
+            &:hover, &:focus {
+                background-color: var(--dark-gray3); color: var(--white);
+            }
+
+            i {font-size: small;}
+        }
+    }
+}

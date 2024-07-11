@@ -1,0 +1,99 @@
+
+.card.mx-auto.my-3{
+    width: 80%;
+    background-color: #D9DCD6;
+    display: flex;
+}
+
+.card.mx-auto{
+    background-color: #D9DCD6;
+    width: 80%;
+}
+
+.card-header.d-flex.justify-content-between.align-items-center{
+    background-color: #D9DCD6;
+}
+
+.card-title{
+    font-weight: 700; /* Montserrat Bold */ 
+    color: black;
+    text-align: center;
+}
+
+.card-text{
+    font-weight: 500;
+    color: black;
+    text-align: justify;
+}
+
+.dadosCadastrados{
+    padding: 1%;
+    background-color: #D9DCD6;
+}
+
+.titulo{
+    font-weight: 700;
+}
+
+.dados{
+    background-color: #81C3D7;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.btn-primary.btn-sm{
+    margin-bottom: 0.5rem;
+    font-size: 100%;
+    font-weight: 700;
+    text-align: center;
+    background-color: #3A7CA5;
+    border: #000;
+    transition: 0.5s;
+}
+
+.btn-primary.btn-sm:hover{
+    background-color: #3A7CA5;
+    scale: 1.01;
+}
+
+.admin-menu.mx-auto {
+    background-color: #D9DCD6;
+    width: 80%;
+    border-radius: 5px;
+    padding: 1%;
+    text-align: center;
+}
+
+.admin-menu.mx-auto ul {
+    list-style: none;
+    padding: 0; /* Remova o espaçamento interno da lista */
+}
+
+.admin-menu.mx-auto li {
+    width: 90%; /* Defina a largura para 100% para ocupar toda a largura da div */
+    background-color: #3A7CA5;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+    display: inline-block; /* Coloque os itens da lista em linha */
+}
+
+.admin-menu.mx-auto li:hover {
+    scale: 1.03;
+}
+
+.links {
+    color: white;
+    display: block; /* Faz com que o texto ocupe toda a largura do item da lista */
+    padding: 10px; /* Adicione algum espaçamento interno para melhorar a aparência */
+}
+
+.links:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+/*AQUI TERMINA O CONTEÚDO PRINCIPAL*/

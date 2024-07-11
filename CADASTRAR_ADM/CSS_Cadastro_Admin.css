@@ -1,0 +1,65 @@
+.formulario{
+    text-align: center; 
+    background-color: D9DCD6;
+    width: 80%;
+    margin-top: 5%;
+    padding: 1%;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.Titulo_Form{
+    font-weight: 700;
+}
+
+.fa-solid.fa-asterisk{
+    color: red;
+    margin-left: 5px;
+}
+
+.form-control{
+    width: 98%;
+    background-color: 81C3D7;
+}
+
+.btn-primary.btn-sm{
+    margin-bottom: 0.5rem;
+    font-size: 100%;
+    font-weight: 700;
+    text-align: center;
+    background-color: 3A7CA5;
+    border: #000;
+    transition: 0.5s;
+}
+
+.btn-primary.btn-sm a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-primary.btn-sm:hover{
+    scale: 1.01;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .form-group{
+    position: relative;
+  }
+
+  .toggle-password {
+    position: absolute;
+    top: 74%;
+    right: 3%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+/*AQUI ACABA O CONTEUDO*/

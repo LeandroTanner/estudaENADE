@@ -1,0 +1,231 @@
+@import "../../main";
+
+i.editar {
+    @include doFlex(center, center, column, unset);
+    min-width: 38px; max-width: 38px;
+    min-height: 38px; max-height: 38px;
+    border-radius: 100%;
+    color: var(--gray3);
+    background-color: var(--light-gray2);
+    border: 2px solid var(--light-gray2);
+
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover, &:focus {
+        background-color: var(--coolblue5); color: var(--white);
+        border-color: var(--coolblue5);
+    }
+
+    &.active {
+        background-color: var(--light-gray2); color: var(--coolblue5);
+        border-color: var(--coolblue5);
+    }
+}
+
+
+form {
+    @include doFlex(center, center, column, 30px);
+
+    div.bloquinhos {
+        @include doFlex(flex-start, flex-start, row, 30px);
+    
+        div.bloquinho {
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid var(--light-gray3);
+    
+            box-shadow: 0 25px 50px 0 var(--light-gray3);
+        }
+    }
+}
+
+
+form input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    color: var(--black);
+    border: none;
+
+    &.desabilitado {
+        background-color: transparent;
+    }
+
+    &.habilitado {
+        background-color: var(--light-gray1);
+        border: 1px solid var(--light-gray3);
+
+        transition: .2s;
+
+        &:hover, &:focus {background-color: var(--light-gray2); border-color: var(--gray3);}
+    }
+
+    &:focus {
+        outline: none !important; 
+        border-color: var(--coolblue5) !important;
+    }
+
+
+    &#email_id.habilitado {
+        cursor: not-allowed;
+    }
+}
+
+
+div.edit-options {
+    @include doFlex(center, center, row, 15px);
+}
+
+
+
+div.perfil {
+    @include doFlex(center, flex-start, column, auto);
+
+    h3 {
+        font-size: 28px;
+    }
+    
+    img.ppic, i.ppic {
+        @include doFlex(center, center, column, 0);
+        min-width: 240px; max-width: 240px;
+        min-height: 240px; max-height: 240px;
+        font-size: 90px;
+        border-radius: 100%;
+
+        object-fit: cover;
+        background: linear-gradient(45deg, var(--blue2) 0, var(--dark-gray3) 100%); color: var(--white);
+    }
+
+
+    div.foto-nome {
+        @include doFlex(center, center, column, 15px);
+
+        div.field {
+            @include doFlex(center, center, column, 6px);
+        }
+
+        p.saudacao {
+            display: block;
+            font-size: 24px;
+        }
+
+        input.nome {
+            text-align: center;
+            font-weight: 700;
+            font-size: 36px;
+        }
+    }
+
+
+    div.about {
+        @include doFlex(center, flex-start, column, 10px);
+
+        div.field {
+            @include doFlex(center, flex-start, column, 5px);
+            width: 100%;
+            
+            div {
+                @include doFlex(flex-start, center, row, 5px);
+                width: 100%;
+            }
+
+            label {
+                display: block;
+                width: 100%;
+                padding: 3px 6px;
+                font-weight: 600;
+                background-color: var(--dark-gray3); color: var(--white);
+                border-radius: 6px;
+            }
+
+            input {display: block; width: 100%;}
+        }
+
+
+
+
+    }
+}
+
+
+
+div.resumo {
+    div.boxes {
+        @include doFlex(center, center, row, 15px);
+
+        div.resumo-box {
+            @include doFlex(flex-start, center, row, 30px);
+            padding: 30px;
+            border-radius: 30px;
+    
+            background: linear-gradient(135deg, var(--light-gray2) 0, var(--light-gray3) 100%);
+    
+            i {
+                font-size: 64px;
+            }
+    
+            h3 {
+                font-size: 56px;
+                font-weight: 500;
+            }
+
+
+            &.pontuacao-total {
+                background: linear-gradient(45deg, var(--gold3) 0, var(--dark-gray3) 100%);
+            }
+
+
+            &.questoes-feitas {
+                background: linear-gradient(45deg, var(--blue4) 0, var(--blue2) 100%); color: var(--white);
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 1366px) {
+    form {
+        width: 100%;
+
+        div.bloquinhos {
+            flex-direction: column;
+            width: 100%;
+
+            div.bloquinho {
+                width: 100%;
+
+                &.foto-nome {
+                    flex-direction: row; 
+
+                    div.field {
+                        align-items: flex-start;
+
+                        input.nome {text-align: left;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 720px) {
+    form {
+        div.bloquinhos {
+            div.bloquinho {
+                &.foto-nome {
+                    flex-direction: column;
+
+                    div.field {
+                        align-items: center;
+
+                        input.nome {text-align: center;}
+                    }
+                }
+            }
+        }
+    }
+}

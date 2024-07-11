@@ -1,0 +1,63 @@
+
+h2{
+    background-color: #81C3D7;
+    width: 80%;
+    max-height: 7%;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 90%;
+    margin-top: 2%;
+    padding: 1.5%;
+    // cursor: pointer;
+}
+
+.custom-embed {
+    width: 80%;
+    margin-top: 1.5%;
+}
+
+.card-title{
+    font-weight: 700; /* Montserrat Bold */ 
+    color: black;
+    text-align: center;
+}
+
+.card-text{
+    font-weight: 500;
+    color: black;
+    text-align: justify;
+}
+
+.card.mx-auto{
+    margin-bottom: 15px;
+}
+
+.btn-custom {
+    display: block;
+    width: 80%;
+    max-width: 80%; /* Defina um tamanho máximo se desejar */
+    margin: 0 auto; /* Centralize o botão */
+    text-align: center; /* Alinhe o texto ao centro */
+    padding: 10px; /* Adicione algum preenchimento para melhorar a aparência */
+    background-color: #3A7CA5; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    text-decoration: none; /* Remova a decoração do texto */
+    font-size: 18px; /* Tamanho da fonte do botão */
+    border: none; /* Remova a borda do botão */
+    border-radius: 5px; /* Adicione bordas arredondadas */
+    margin-bottom: 50px;
+    transition: 0.5s;
+    font-weight: 650;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-custom:hover {
+    scale: 1.03;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none;
+}
+  
+ /*FIM CONTEUDO*/

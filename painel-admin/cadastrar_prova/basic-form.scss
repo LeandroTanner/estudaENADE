@@ -1,0 +1,187 @@
+@import "../main";
+
+
+
+form label {
+    display: block;
+    font-weight: bold;
+}
+
+
+
+div.header {
+    @include doFlex(center, flex-start, column, 5px);
+    width: 100%;
+
+    p {
+        font-weight: bold;
+    }
+
+    h1.prova-titulo {
+        font-size: 24px;
+        padding-left: 5px;
+        border-left: 3px solid var(--blue3);
+        color: var(--dark-gray3);
+    }
+}
+
+
+
+div.container {
+    background-color: white;
+    width: 100%;
+    
+    form {
+        display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 15px;
+        width: 100%;
+
+        div.tipos-questao {
+            @include doFlex(center, center, row, 10px);
+            width: 100%;
+
+            button {
+                @include doFlex(center, center, row, 5px);
+                width: 100%;
+                padding: 10px 30px;
+                font-weight: 700;
+                font-size: small;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 10px 10px 0 0;
+                background-color: var(--light-gray3); color: gray;
+                border-bottom: 3px solid var(--light-gray3);
+
+                cursor: pointer;
+                transition: .2s;
+
+                &:hover, &:focus {
+                    background-color: var(--light-gray2); color: var(--dark-gray3);
+                }
+
+                &.tipo-questao.active {
+                    border-bottom: 3px solid var(--blue3);
+                    background-color: var(--light-gray2);
+                    color: var(--blue3);
+                }
+            }
+        }
+
+        span.obrigatorio {
+            color: red;
+            font-weight: 900;
+        }
+        
+        
+        div.tipos-questao {
+            display: flex; justify-content: center; align-items: center; gap: 15px;
+        }
+        
+        
+        div.field {
+            width: 100%;
+            input, label, textarea {
+                width: 100%;
+            }
+            img {
+                display: block;
+                width: 75%; margin: auto;
+                border: 2px solid var(--dark-gray3);
+                border-radius: 15px;
+            }
+        }
+        
+        
+        
+        div.alternativas {
+            display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 6px;
+            width: 100%;
+
+            div.field.default-alt {
+                display: flex; justify-content: center; align-items: center; gap: 5px;
+            }
+            /* INICIALIZANDO DISPLAY DAS ALTERNATIVAS */
+            div.field.inactive-alt {
+                display: none;
+            }
+            div.field label {
+                min-width: max-content; max-width: max-content;
+            }
+            button.nova-alt {
+                width: 100%;
+            }
+        }
+        
+        
+        
+        input[type='submit'] {
+            width: max-content;
+        }
+    }
+}
+
+
+
+
+
+div.paginas {
+    @include doFlex(center, flex-start, column, 10px);
+    // max-width: 234px;
+    padding: 30px;
+    list-style-type: none;
+    background: linear-gradient(-135deg, #e6e6e6 0, white 100%);
+    border: 2px solid #e6e6e6;
+    border-radius: 25px;
+
+    p.titulo {
+        font-weight: 800;
+    }
+
+
+    ul {
+        @include doFlex(flex-start, center, row, 5px); flex-wrap: wrap;
+        list-style-type: none;
+
+        li {
+            form {
+                button {
+                    min-width: 30px; max-width: 30px;
+                    min-height: 40px; max-height: 40px;
+                    font-weight: 500;
+                    border-radius: 8px; border: 2px solid #2d2d2d;
+                    background-color: white;
+
+                    cursor: pointer;
+                    transition: .2s;
+
+                    &.feita {
+                        background-color: #3A7CA5; color: white;
+
+                        &:hover, &:focus {
+                            background-color: #1f6089;
+                            border-color: #2d2d2d;
+                        }
+                    }
+
+                    &.pg-atual {
+                        background-color: #2d2d2d; color: white;
+                        
+                        &.feita {
+                            &:hover, &:focus {
+                                background-color: #2d2d2d;
+                                border-color: gray;
+                            }    
+                        }
+                        
+                        &:hover, &:focus {
+                            border-color: gray;
+                        }
+                    }
+
+                    &:hover, &:focus {
+                        border-color: #3A7CA5;
+                    }
+                }
+            }
+        }
+    }
+}

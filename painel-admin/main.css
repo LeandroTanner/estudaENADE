@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,300;0,600;0,700;1,300;1,400;1,600&display=swap");
+:root {
+  --white: white;
+  --light-gray1: #f1f1f1;
+  --light-gray2: #e6e6e6;
+  --light-gray3: #d9dcd6;
+  --gray3: gray;
+  --dark-gray3: #2d2d2d;
+  --purple9: #edc3ed;
+  --blue1: #042b41;
+  --blue2: #16425b;
+  --blue3: #2f6690;
+  --blue4: #3a7ca5;
+  --blue6: #81c3d7;
+  --coolblue5: #2d94e3;
+  --green5: #26a45f;
+  --gold3: gold;
+  --red4: #bb041a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 0;
+  width: 100%;
+  background-color: var(--light-gray2);
+}
+
+div.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  width: 100%;
+  max-height: 100vh;
+  overflow-y: scroll;
+  background-color: var(--light-gray2);
+}
+
+div.bloco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: var(--white);
+  border: 2px solid var(--light-gray3);
+}
+div.bloco h1.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  text-align: center;
+  font-size: 48px;
+  color: var(--dark-gray3);
+}
+
+button.btn, input.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px 30px;
+  font-size: small;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid gray;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #2d2d2d;
+  cursor: pointer;
+  transition: 0.2s;
+}
+button.btn:hover, button.btn:focus, input.btn:hover, input.btn:focus {
+  background-color: gray;
+  color: black;
+}
+button.btn.blue1, input.btn.blue1 {
+  background-color: var(--coolblue5);
+  color: var(--white);
+  border-color: var(--coolblue5);
+}
+button.btn.blue1:hover, button.btn.blue1:focus, input.btn.blue1:hover, input.btn.blue1:focus {
+  background-color: var(--blue4);
+  border-color: var(--blue4);
+}
+button.btn.blue2, input.btn.blue2 {
+  background-color: transparent;
+  color: var(--dark-gray3);
+  border-color: var(--dark-gray3);
+}
+button.btn.blue2:hover, button.btn.blue2:focus, input.btn.blue2:hover, input.btn.blue2:focus {
+  background-color: var(--coolblue5);
+  border-color: var(--coolblue5);
+  color: var(--white);
+}
+button.btn.red2, input.btn.red2 {
+  border-color: var(--red4);
+  color: var(--dark-gray3);
+}
+button.btn.red2:hover, button.btn.red2:focus, input.btn.red2:hover, input.btn.red2:focus {
+  background-color: var(--red4);
+  color: var(--white);
+}
+
+button.btn.edit {
+  min-width: 30px;
+  max-width: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  background-color: var(--light-gray3);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+button.btn.edit.s1 {
+  background-color: transparent;
+  color: var(--dark-gray3);
+}
+button.btn.edit.s1:hover, button.btn.edit.s1:focus {
+  color: var(--blue2);
+}
+button.btn.edit.s2 {
+  background-color: var(--blue3);
+  color: var(--white);
+}
+button.btn.edit.s2:hover, button.btn.edit.s2:focus {
+  background-color: var(--blue2);
+}
+button.btn.edit.s3 {
+  background-color: var(--red4);
+  color: var(--white);
+}
+button.btn.edit.s3:hover, button.btn.edit.s3:focus {
+  background-color: var(--dark-gray3);
+}
+
+div.no-regs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  position: relative;
+}
+div.no-regs i.icon {
+  position: absolute;
+  left: 0;
+  font-size: 86px;
+  opacity: 0.5;
+}
+div.no-regs p {
+  font-weight: bold;
+}
+div.no-regs a {
+  color: var(--coolblue5);
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 980px) {
+  body {
+    flex-direction: column !important;
+  }
+  body div.wrapper {
+    max-height: unset;
+  }
+}/*# sourceMappingURL=main.css.map */

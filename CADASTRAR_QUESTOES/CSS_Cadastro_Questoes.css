@@ -1,0 +1,45 @@
+
+.formulario{
+    text-align: center; 
+    background-color: D9DCD6;
+    width: 80%;
+    margin-top: 5%;
+    padding: 1%;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.Titulo_Form{
+    font-weight: 700;
+    font-size: 150%;
+}
+
+.fa-solid.fa-asterisk{
+    color: red;
+    margin-left: 5px;
+}
+
+.form-control{
+    width: 98%;
+    background-color: 81C3D7;
+    height: 30px;
+}
+
+.btn.mb-2{
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 100%;
+    font-weight: 700;
+    text-align: center;
+    background-color: 3A7CA5;
+    border: #000;
+    width: 75%;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.btn.mb-2:hover{
+    scale: 1.01;
+}
+
+/*AQUI ACABA O CONTEUDO*/
